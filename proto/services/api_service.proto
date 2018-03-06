@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package services;
+
+import "proto/services/api_message.proto";
+
+// Interface exported by the server.
+service APIService {
+  rpc Echo(EchoRequest) returns(EchoResponse) {}
+}
